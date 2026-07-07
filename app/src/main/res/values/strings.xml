@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Llama Server</string>
+    <string name="pick_model">Pick GGUF model</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="remember">Remember model</string>
+    <string name="save">Save</string>
+    <string name="status_stopped">Server stopped</string>
+    <string name="status_running">Running on port %d</string>
+    <string name="server_starting">Starting server…</string>
+    <string name="no_model">No model selected</string>
+</resources>

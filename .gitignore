@@ -1,0 +1,20 @@
+# Default Android Studio gitignore
+
+*.iml
+*.hprof
+.idea/
+.gradle/
+/local.properties
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+app/src/main/assets/llama-server/
+app/src/main/assets/lib/
+# Gradle wrapper scripts
+!gradlew
+!gradlew.bat
+# Gradle cache
+/.gradle/
+
