@@ -30,8 +30,13 @@ jobs:
       - name: Build debug APK
         run: ./gradlew assembleDebug --no-daemon
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - name: Upload APK to release
+        uses: ncipollo/release-action@v1
         with:
-          name: llama-android-debug
-          path: app/build/outputs/apk/debug/*.apk
+          tag: build-${{ github.run_number }}
+          name: Build ${{ github.run_number }}
+          artifacts: app/build/outputs/apk/debug/*.apk
+          token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: true
+          generateReleaseNotes: false
+          makeLatest: false
